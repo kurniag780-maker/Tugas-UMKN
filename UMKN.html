@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+
+<html lang="id"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "on-tertiary-fixed-variant": "#005320", "on-primary": "#ffffff", "on-tertiary-container": "#e7ffe4", "on-surface-variant": "#5c403c", "on-secondary": "#ffffff", "on-error": "#ffffff", "inverse-primary": "#ffb4ab", "surface-container-highest": "#e4e1e6", "inverse-surface": "#303033", "on-error-container": "#93000a", "surface-container": "#f0edf1", "on-secondary-fixed": "#370e00", "on-surface": "#1b1b1e", "outline": "#916f6b", "secondary-fixed-dim": "#ffb599", "primary-fixed": "#ffdad6", "on-primary-container": "#fff6f5", "tertiary-fixed-dim": "#62df7d", "primary-fixed-dim": "#ffb4ab", "on-background": "#1b1b1e", "error-container": "#ffdad6", "surface-variant": "#e4e1e6", "tertiary": "#00682b", "error": "#ba1a1a", "surface-container-lowest": "#ffffff", "surface-tint": "#bf0715", "tertiary-fixed": "#7ffc97", "secondary": "#a73a00", "on-secondary-container": "#571a00", "primary": "#b70011", "surface-bright": "#fbf8fc", "surface-container-low": "#f6f2f7", "on-tertiary": "#ffffff", "primary-container": "#dc2626", "secondary-container": "#fd651e", "background": "#fbf8fc", "inverse-on-surface": "#f3f0f4", "surface-container-high": "#eae7eb", "on-primary-fixed-variant": "#93000b", "on-secondary-fixed-variant": "#7f2b00", "surface-dim": "#dcd9dd", "outline-variant": "#e6bdb8", "surface": "#fbf8fc", "on-tertiary-fixed": "#002109", "secondary-fixed": "#ffdbce", "tertiary-container": "#008438", "on-primary-fixed": "#410002" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "gutter": "1rem", "space-xl": "2rem", "gutter-sm": "0.75rem", "margin-md": "1.5rem", "margin": "1rem", "space-2xl": "3rem", "margin-lg": "2.5rem", "space-sm": "0.5rem", "space-xs": "0.25rem", "space-md": "1rem", "space-lg": "1.5rem" }, fontFamily: { "body-md": ["Plus Jakarta Sans"], "title-md": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"], "display": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "display-mobile": ["Plus Jakarta Sans"], "headline-lg-mobile": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"] }, fontSize: { "body-md": ["14px", { lineHeight: "20px", fontWeight: "400" }], "title-md": ["16px", { lineHeight: "22px", fontWeight: "600" }], "headline-md": ["20px", { lineHeight: "26px", fontWeight: "700" }], "body-lg": ["16px", { lineHeight: "24px", fontWeight: "400" }], "body-sm": ["12px", { lineHeight: "18px", fontWeight: "400" }], "label-sm": ["11px", { lineHeight: "14px", letterSpacing: "0.06em", fontWeight: "700" }], "display": ["40px", { lineHeight: "48px", letterSpacing: "-0.02em", fontWeight: "800" }], "headline-sm": ["18px", { lineHeight: "24px", fontWeight: "600" }], "headline-lg": ["28px", { lineHeight: "34px", letterSpacing: "-0.01em", fontWeight: "700" }], "label-md": ["12px", { lineHeight: "16px", letterSpacing: "0.04em", fontWeight: "700" }], "display-mobile": ["32px", { lineHeight: "38px", letterSpacing: "-0.02em", fontWeight: "800" }], "headline-lg-mobile": ["24px", { lineHeight: "30px", letterSpacing: "-0.01em", fontWeight: "700" }], "label-lg": ["14px", { lineHeight: "20px", letterSpacing: "0.02em", fontWeight: "700" }] } } } }</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-body-md text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] pt-safe"><div class="h-20 px-gutter flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm min-w-0 flex-1"><img alt="Logo Pecel Lele Cak Bagus" class="h-8 w-auto object-contain shrink-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAY4PT9HukehKnZIeGwQmD7upP4hZ6Oi_igC6EFS6AeMyxHpMIgqbU2CNk4MXa9ng267gL9rJ8__0zNix1Xqz0E8uOzfkQoBdOTYThoFIlOAfuVZOuUn0MFGns-LszaGswqIqxrrGdqFvNvbjjIbH_N1ohAZpFdB7Dt4Wtcy6HfdNxg_t5x30rT70kAGMbxGtFxlXKHTUzbzbFqz9PfWN2oQ8LMIkgVIRhVzOT70zQ8alSMwz27DTdhLg"/><div class="flex flex-col min-w-0"><div class="flex items-center gap-space-xs"><span class="font-title-md text-title-md text-primary truncate leading-tight">Pecel Lele Mas Cak Bagus</span></div><div class="flex items-center gap-space-xs mt-0.5"><span class="inline-flex items-center px-1.5 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm shrink-0"><span class="w-1.5 h-1.5 rounded-full bg-tertiary mr-1 animate-pulse"></span>Buka 17:00 - 02:00</span><span class="font-body-sm text-body-sm text-on-surface-variant truncate flex items-center"><span class="material-symbols-outlined text-[13px] mr-0.5 shrink-0">location_on</span>Tenda Depan Lap. Merdeka</span></div></div></div><div class="flex items-center gap-space-xs shrink-0"><a aria-label="Chat WhatsApp Pemesanan" class="w-11 h-11 rounded-full bg-tertiary-container text-on-tertiary flex items-center justify-center hover:opacity-95 transition-opacity shadow-[0_2px_8px_rgba(0,132,56,0.25)]" href="https://wa.me/" rel="noopener noreferrer" target="_blank"><span class="material-symbols-outlined text-[20px]">chat</span></a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex flex-col relative w-full pt-20 pb-24 bg-surface min-h-screen"><div class="flex flex-col w-full">
+<!-- Interactive Cart State (Headless Sync) -->
+<div class="hidden fixed bottom-20 left-4 right-4 z-40 bg-inverse-surface text-inverse-on-surface rounded-xl p-3 shadow-2xl flex items-center justify-between transition-all transform duration-300" id="cart-dock">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-full bg-primary flex items-center justify-center text-on-primary font-label-md text-label-md">
+<span id="cart-count">1</span>x
+      </div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-surface-container-highest">Keranjang Pesanan</span>
+<span class="font-headline-sm text-headline-sm text-on-primary" id="cart-total">Rp 22.000</span>
+</div>
+</div>
+<a class="px-4 py-2 rounded-lg bg-tertiary-container text-on-tertiary font-label-md text-label-md flex items-center gap-1 active:scale-95 transition-transform" href="https://wa.me/6281234567890?text=Halo%20Cak%20Bagus,%20saya%20mau%20pesan%20menu%20ini:" rel="noopener noreferrer" target="_blank">
+<span>Kirim Pesanan</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+<!-- Promo Hero Billboard -->
+<section class="px-gutter pt-space-xs pb-space-sm">
+<div class="relative w-full rounded-xl overflow-hidden shadow-md bg-inverse-surface">
+<div class="h-56 w-full bg-cover bg-center relative" data-alt="Close-up mouth-watering Indonesian crispy fried catfish pecel lele presented dramatically upright with wings spread open, freshly fried in golden oil, placed on dark stone plate with mortar sambal terasi, fresh green basil kemangi, cucumber slices, hot steam rising under warm dramatic night-market incandescent lighting, ultra-appetizing food photography." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBmm6e4PEIbuTTlWVHpvqevDdLVHsAYvSy114fVqEjNSzxr7DfhHdU7cT_OY4Sr_cBClVtO8bTIv2-7ky3s9DegBYoWZd5DQkUDPJMOqYzFQnKH3brIpK5MEwMJW55QQ1OQJdxrghyjpXj2T4Z-t2E0cnDm_M_ZUQIu3o4aHkLNfCsZxUav98PCnSsxoDfWfZJYOkVUrb7dFf78W-EG-Qe0vsjaYLAGyxA4cXXyplw6w93_UxiOe1jfCQ')">
+<div class="absolute inset-0 bg-gradient-to-t from-on-surface via-on-surface/40 to-transparent"></div>
+<div class="absolute top-3 left-3 flex flex-wrap gap-1.5 z-10">
+<span class="px-2.5 py-1 rounded-full bg-primary text-on-primary font-label-sm text-label-sm shadow-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]" style="font-variation-settings: 'FILL' 1;">local_fire_department</span>
+            Khas Lamongan Asli
+          </span>
+<span class="px-2.5 py-1 rounded-full bg-secondary-container text-on-secondary font-label-sm text-label-sm shadow-sm">
+            Harga Mahasiswa
+          </span>
+</div>
+<div class="absolute bottom-3 left-3 right-3 z-10 flex flex-col">
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-surface-container-lowest leading-tight">
+            Sensasi Lele Crispy Terbang &amp; Sambal Ulek Dadakan
+          </h2>
+<p class="font-body-sm text-body-sm text-surface-container-highest mt-1">
+            Porsi kenyang, lalapan segar melimpah. Paket hemat mulai Rp 15.000!
+          </p>
+<div class="mt-2.5 flex items-center justify-between">
+<div class="flex items-center gap-1 text-tertiary-fixed font-label-md text-label-md">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+<span>100% Ikan Hidup Segar</span>
+</div>
+<a class="px-3 py-1.5 rounded-lg bg-primary text-on-primary font-label-md text-label-md flex items-center gap-1 active:scale-95 transition-transform shadow-sm" href="#menu-laris">
+<span>Coba Sekarang</span>
+<span class="material-symbols-outlined text-[14px]">arrow_downward</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Quick Highlight Metrics Bento -->
+<section class="px-gutter py-space-xs">
+<div class="grid grid-cols-2 gap-2">
+<div class="bg-surface-container-lowest rounded-xl p-3 shadow-sm flex items-center gap-2.5">
+<div class="w-10 h-10 rounded-lg bg-tertiary-container/15 text-tertiary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<div class="min-w-0">
+<div class="flex items-center gap-1">
+<span class="font-headline-sm text-headline-sm text-on-surface">4.9</span>
+<span class="font-label-sm text-label-sm text-tertiary">/ 5.0</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">1.200+ Pecinta Lele</p>
+</div>
+</div>
+<div class="bg-surface-container-lowest rounded-xl p-3 shadow-sm flex items-center gap-2.5">
+<div class="w-10 h-10 rounded-lg bg-secondary-container/15 text-secondary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px]">schedule</span>
+</div>
+<div class="min-w-0">
+<span class="font-headline-sm text-headline-sm text-on-surface">17.00-02.00</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Pas Buat Ronda Malam</p>
+</div>
+</div>
+<a class="col-span-2 bg-tertiary-container text-on-tertiary rounded-xl p-3 shadow-md flex items-center justify-between active:scale-[0.99] transition-transform" href="https://wa.me/6281234567890?text=Halo%20Cak%20Bagus,%20saya%20mau%20pesan%20antar%20makan%20malam" rel="noopener noreferrer" target="_blank">
+<div class="flex items-center gap-2.5">
+<div class="w-9 h-9 rounded-full bg-surface-container-lowest/20 flex items-center justify-center text-on-tertiary shrink-0">
+<span class="material-symbols-outlined text-[22px]">delivery_dining</span>
+</div>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md font-semibold leading-tight">Pesan Antar Cepat via WhatsApp</span>
+<span class="font-body-sm text-body-sm opacity-90">Kirim panas-panas ke kost atau rumah</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-[20px]">chevron_right</span>
+</a>
+</div>
+</section>
+<!-- Spicy Level Customizer Card -->
+<section class="px-gutter pt-space-md pb-space-xs">
+<div class="bg-surface-container-lowest rounded-xl p-3.5 shadow-sm">
+<div class="flex items-center justify-between mb-2">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-[20px]" style="font-variation-settings: 'FILL' 1;">whatshot</span>
+<span class="font-title-md text-title-md text-on-surface">Pilih Sambal Ulek Favoritmu</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary bg-secondary-fixed/50 px-2 py-0.5 rounded-full">Cobek Asli</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-3">Diulek dadakan saat pesanan masuk, bukan sambal blenderan!</p>
+<!-- Interactive Spicy Pills -->
+<div class="grid grid-cols-2 gap-2" id="spicy-selector">
+<button class="spicy-btn p-2 rounded-lg bg-surface-container-low text-left transition-all flex flex-col gap-0.5" data-level="0" onclick="selectSpicy(0)" type="button">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface">Level 0: Santai</span>
+<span class="material-symbols-outlined text-[16px] text-tertiary">spa</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Manis gurih tomat terasi</span>
+</button>
+<button class="spicy-btn p-2 rounded-lg bg-surface-container-low text-left transition-all flex flex-col gap-0.5" data-level="1" onclick="selectSpicy(1)" type="button">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface">Level 1: Sedang</span>
+<span class="material-symbols-outlined text-[16px] text-secondary">local_fire_department</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Cabe 5 rawit merah segar</span>
+</button>
+<button class="spicy-btn p-2 rounded-lg bg-primary-container text-on-primary text-left transition-all shadow-sm flex flex-col gap-0.5" data-level="2" onclick="selectSpicy(2)" type="button">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-primary">Level 2: Nampol 🔥</span>
+<span class="material-symbols-outlined text-[16px] text-on-primary" style="font-variation-settings: 'FILL' 1;">whatshot</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-primary/90">Cabe 12 rawit ulek pedas</span>
+</button>
+<button class="spicy-btn p-2 rounded-lg bg-surface-container-low text-left transition-all flex flex-col gap-0.5" data-level="3" onclick="selectSpicy(3)" type="button">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface">Level 3: Mampus 🌶️🌶️</span>
+<span class="material-symbols-outlined text-[16px] text-primary">warning</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">25 Rawit setan + air jeruk</span>
+</button>
+</div>
+<div class="mt-2 text-center font-label-sm text-label-sm text-primary transition-opacity duration-200" id="spicy-toast">
+        Pilihan aktif: Level 2 Nampol (Paling banyak disukai pelanggan)
+      </div>
+</div>
+</section>
+<!-- Category Pills (Horizontal Scroller) -->
+<section class="pt-space-md pb-space-xs">
+<div class="px-gutter flex items-center justify-between mb-2">
+<span class="font-headline-sm text-headline-sm text-on-surface">Kategori Kuliner</span>
+<span class="font-label-sm text-label-sm text-primary">Geser Kanan →</span>
+</div>
+<div class="flex gap-2 overflow-x-auto px-gutter no-scrollbar pb-1">
+<button class="cat-pill px-3.5 py-1.5 rounded-full bg-primary text-on-primary font-label-md text-label-md whitespace-nowrap shadow-sm shrink-0" onclick="filterCategory('semua', this)" type="button">
+        Semua (24)
+      </button>
+<button class="cat-pill px-3.5 py-1.5 rounded-full bg-surface-container text-on-surface font-label-md text-label-md whitespace-nowrap shrink-0" onclick="filterCategory('lele', this)" type="button">
+        🐟 Lele Crispy
+      </button>
+<button class="cat-pill px-3.5 py-1.5 rounded-full bg-surface-container text-on-surface font-label-md text-label-md whitespace-nowrap shrink-0" onclick="filterCategory('ayam', this)" type="button">
+        🍗 Ayam Goreng/Bakar
+      </button>
+<button class="cat-pill px-3.5 py-1.5 rounded-full bg-surface-container text-on-surface font-label-md text-label-md whitespace-nowrap shrink-0" onclick="filterCategory('bebek', this)" type="button">
+        🦆 Bebek Ungkep
+      </button>
+<button class="cat-pill px-3.5 py-1.5 rounded-full bg-surface-container text-on-surface font-label-md text-label-md whitespace-nowrap shrink-0" onclick="filterCategory('pelengkap', this)" type="button">
+        🥬 Tahu, Tempe &amp; Kol
+      </button>
+<button class="cat-pill px-3.5 py-1.5 rounded-full bg-surface-container text-on-surface font-label-md text-label-md whitespace-nowrap shrink-0" onclick="filterCategory('sambal', this)" type="button">
+        🌶️ Aneka Sambal
+      </button>
+<button class="cat-pill px-3.5 py-1.5 rounded-full bg-surface-container text-on-surface font-label-md text-label-md whitespace-nowrap shrink-0" onclick="filterCategory('minuman', this)" type="button">
+        🍹 Es Jeruk &amp; Teh
+      </button>
+</div>
+</section>
+<!-- Legendary Best Seller Section -->
+<section class="px-gutter pt-space-sm pb-space-md" id="menu-laris">
+<div class="flex items-center justify-between mb-3">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Menu Legendaris Paling Laris</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Rekomendasi wajib saat berkunjung ke tenda</p>
+</div>
+<span class="w-8 h-8 rounded-full bg-surface-container-high flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[18px]">restaurant</span>
+</span>
+</div>
+<div class="flex flex-col gap-3">
+<!-- Item 1: Paket Lele Terbang Juara -->
+<div class="menu-card bg-surface-container-lowest rounded-xl p-3 shadow-sm flex gap-3 relative overflow-hidden" data-category="lele">
+<div class="relative w-28 h-28 rounded-lg overflow-hidden shrink-0">
+<img class="w-full h-full object-cover" data-alt="Iconic Indonesian pecel lele terbang crispy golden brown catfish fried in a distinctive curved shape looking like wings, served with warm savory rice wrapped in banana leaf, fresh cucumber, raw cabbage, basil leaves, fried tofu and a small traditional stone cobek filled with freshly pounded red chili paste." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBdPmzdhY1T9vqmtjqIJ0xmcx8QiRD4Q_Q1UovM2sDj3GhF5HWMbzL2PYqVjrif4yK_zpbg3ioJPQDMPDvLbf_EkUhbKCgh1dnLxZdM-0x4Bm8SYd1Fj_a69ygV1Bj5YDUrfgWLeyfu1vsWOafOqw-r_1KnuvOY5zkEHNdOFb1vkwpLrMVo6cpViZe8EEby4HMZ1yi3LHW7Jg8NXvmdOCU30S2PYEC9SSBhqGfyqfUcBuhRve1gxDd5Ng"/>
+<span class="absolute top-1 left-1 px-1.5 py-0.5 rounded bg-primary text-on-primary font-label-sm text-[10px] leading-tight font-bold">
+            #1 Terlaris
+          </span>
+</div>
+<div class="flex flex-col justify-between flex-1 min-w-0">
+<div>
+<div class="flex items-start justify-between gap-1">
+<h4 class="font-title-md text-title-md text-on-surface leading-snug">Paket Lele Terbang Komplit</h4>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-0.5">
+              Lele garing mekar + Nasi Uduk Daun Pisang + Lalapan Kemangi Segar + Sambal Terasi Cobek + Tahu Tempe.
+            </p>
+</div>
+<div class="flex items-center justify-between mt-2">
+<span class="font-headline-sm text-headline-sm text-primary font-bold">Rp 22.000</span>
+<button class="px-3 py-1.5 rounded-lg bg-primary text-on-primary font-label-md text-label-md flex items-center gap-1 active:scale-90 transition-transform shadow-sm" onclick="addToCart('Paket Lele Terbang Komplit', 22000)" type="button">
+<span class="material-symbols-outlined text-[16px]">add</span>
+<span>Pesan</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Item 2: Lele Bakar Madu Gurih -->
+<div class="menu-card bg-surface-container-lowest rounded-xl p-3 shadow-sm flex gap-3 relative overflow-hidden" data-category="lele">
+<div class="relative w-28 h-28 rounded-lg overflow-hidden shrink-0">
+<img class="w-full h-full object-cover" data-alt="Charcoal-grilled Indonesian catfish lele bakar glazed with sweet aromatic soy and wild bee honey, charred edges with rich brown caramelization, served with hot steamed jasmine rice and a spicy sambal bawang garlic dip on banana leaf garnish." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCK3597NEe5RezEzzmFiPk4rjUE1I8la7Cvxt3sXoaWpDRlg5sunRfiz4Rb8Io7hfoBFVB5k5iIX1A01HMc0qM2iS_Uoy9ZSdGrovqUYPRb-44KkXT8sRGSrSawz-gN5mtMA-tAFEZX3qYijTsgpHHJxBMHrhgbe_sz6o6NHlU45N6UyAyjO1f4jn_c59TL40p722aND7IFNtQFOQuETO6EZ9HzrMQ18YOD4-qECWisQZTT4lmLzaPsww"/>
+<span class="absolute top-1 left-1 px-1.5 py-0.5 rounded bg-secondary text-on-secondary font-label-sm text-[10px] leading-tight font-bold">
+            Karamel Arang
+          </span>
+</div>
+<div class="flex flex-col justify-between flex-1 min-w-0">
+<div>
+<h4 class="font-title-md text-title-md text-on-surface leading-snug">Paket Lele Bakar Bumbu Madu</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-0.5">
+              Lele bakar arang batok harum karamelisasi manis gurih + Nasi Putih Pulen + Sambal Bawang Korek.
+            </p>
+</div>
+<div class="flex items-center justify-between mt-2">
+<span class="font-headline-sm text-headline-sm text-primary font-bold">Rp 24.000</span>
+<button class="px-3 py-1.5 rounded-lg bg-primary text-on-primary font-label-md text-label-md flex items-center gap-1 active:scale-90 transition-transform shadow-sm" onclick="addToCart('Paket Lele Bakar Madu', 24000)" type="button">
+<span class="material-symbols-outlined text-[16px]">add</span>
+<span>Pesan</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Item 3: Paket Ayam Kalasan Tenda Gurih Lengkap -->
+<div class="menu-card bg-surface-container-lowest rounded-xl p-3 shadow-sm flex gap-3 relative overflow-hidden" data-category="ayam">
+<div class="relative w-28 h-28 rounded-lg overflow-hidden shrink-0">
+<img class="w-full h-full object-cover" data-alt="Tender and succulent Indonesian Ayam Kalasan deep-fried chicken quarter, infused with traditional spices, palm sugar and coconut water glaze, garnished with crispy spiced crumbs kremesan, served beside a vibrant mound of red sambal and crispy fried tempeh." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDg2uFhiThXhXaagq_H25p07iVKowYdAdMWilCpeLPtaSPpSuxjs7fb_3GcA1AjwB4DQ5pY32711i9CFRbcwkl9dhRGhq_yrO1vDKO4kD-qy-cG6H44Fnh59J6U8dhVG593RecnWlmxoyxUvyNdlm-fNti2DI952-z1cWQNDE51d2n2Hoi3Mg05NiirM0CzIsmY1mLSfEB_inEHSu9iPPMsfFRc9gTne9iNMWbO0IJiqjeTeG2hMHz0Ow"/>
+</div>
+<div class="flex flex-col justify-between flex-1 min-w-0">
+<div>
+<h4 class="font-title-md text-title-md text-on-surface leading-snug">Paket Ayam Kalasan Tenda</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-0.5">
+              Paha/Dada empuk bumbu rempah kelapa muda ungkep manis gurih, kremesan renyah + Nasi + Lalap.
+            </p>
+</div>
+<div class="flex items-center justify-between mt-2">
+<span class="font-headline-sm text-headline-sm text-primary font-bold">Rp 26.000</span>
+<button class="px-3 py-1.5 rounded-lg bg-primary text-on-primary font-label-md text-label-md flex items-center gap-1 active:scale-90 transition-transform shadow-sm" onclick="addToCart('Paket Ayam Kalasan Tenda', 26000)" type="button">
+<span class="material-symbols-outlined text-[16px]">add</span>
+<span>Pesan</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Item 4: Kol Goreng Krispi Renyah Gurih -->
+<div class="menu-card bg-surface-container-lowest rounded-xl p-3 shadow-sm flex gap-3 relative overflow-hidden" data-category="pelengkap">
+<div class="relative w-28 h-28 rounded-lg overflow-hidden shrink-0">
+<img class="w-full h-full object-cover" data-alt="Deep-fried Indonesian shredded cabbage kol goreng browned to crispy sweet perfection, light golden color with lightly charred aromatic edges, sprinkled with mild savory salt and served hot in a small rattan basket." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD1VMRrO9OFmvD7zxw2-qsfKZMSA3BAR2JmrSUxHDHeSjy66G2-taxcKhTi0tFQNBdU1JYii4skJ8DMzat269lZ4ODTnWtq9euzjIOf7TZTwN8jgnyVhhrsxY4kB4DMTVtEjsdmBYM3XdEEk56OyKAXUGYj3bK4krhtnzRqhAiDS47_DHLPz1r4OT5hj0zpJUo6CYir-ZUHzQj3pkRayLDOk3_8hYonQJOWJVxmxLmI7O12UnrrSo2cIA"/>
+<span class="absolute top-1 left-1 px-1.5 py-0.5 rounded bg-tertiary text-on-tertiary font-label-sm text-[10px] leading-tight font-bold">
+            Favorit Ngemil
+          </span>
+</div>
+<div class="flex flex-col justify-between flex-1 min-w-0">
+<div>
+<h4 class="font-title-md text-title-md text-on-surface leading-snug">Kol Goreng Krispi Gurih</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-0.5">
+              Goreng dadakan api besar, renyah manis karamel khas warung tenda. Teman setia sambal terasi.
+            </p>
+</div>
+<div class="flex items-center justify-between mt-2">
+<span class="font-headline-sm text-headline-sm text-primary font-bold">Rp 6.000</span>
+<button class="px-3 py-1.5 rounded-lg bg-primary text-on-primary font-label-md text-label-md flex items-center gap-1 active:scale-90 transition-transform shadow-sm" onclick="addToCart('Kol Goreng Krispi', 6000)" type="button">
+<span class="material-symbols-outlined text-[16px]">add</span>
+<span>Pesan</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Keunggulan Warung Cak Bagus (4-Pillar Grid) -->
+<section class="px-gutter py-space-sm">
+<div class="bg-surface-container-low rounded-xl p-4">
+<div class="flex items-center gap-2 mb-3">
+<span class="material-symbols-outlined text-primary text-[22px]">health_and_safety</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Jaminan Kualitas Cak Bagus</h3>
+</div>
+<div class="grid grid-cols-2 gap-2.5">
+<div class="bg-surface-container-lowest p-3 rounded-lg shadow-sm flex flex-col gap-1">
+<div class="w-7 h-7 rounded-full bg-tertiary-container/15 text-tertiary flex items-center justify-center">
+<span class="material-symbols-outlined text-[16px]">set_meal</span>
+</div>
+<span class="font-label-md text-label-md text-on-surface font-bold mt-1">Ikan Segar Setiap Hari</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Bukan ikan beku/freezer, daging lele manis tidak bau tanah.</p>
+</div>
+<div class="bg-surface-container-lowest p-3 rounded-lg shadow-sm flex flex-col gap-1">
+<div class="w-7 h-7 rounded-full bg-primary/10 text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">outdoor_grill</span>
+</div>
+<span class="font-label-md text-label-md text-on-surface font-bold mt-1">Cobek Batu Asli</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Sambal diulek manual di batu kali, aroma terasi keluar maksimal.</p>
+</div>
+<div class="bg-surface-container-lowest p-3 rounded-lg shadow-sm flex flex-col gap-1">
+<div class="w-7 h-7 rounded-full bg-secondary-container/15 text-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-[16px]">water_drop</span>
+</div>
+<span class="font-label-md text-label-md text-on-surface font-bold mt-1">Minyak Selalu Jernih</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Minyak kelapa sawit premium berkualitas ganti rutin setiap sore.</p>
+</div>
+<div class="bg-surface-container-lowest p-3 rounded-lg shadow-sm flex flex-col gap-1">
+<div class="w-7 h-7 rounded-full bg-tertiary-fixed text-on-tertiary-fixed flex items-center justify-center">
+<span class="material-symbols-outlined text-[16px]">all_inclusive</span>
+</div>
+<span class="font-label-md text-label-md text-on-surface font-bold mt-1">Gratis Lalap &amp; Refill</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Kemangi, timun sepuasnya + gratis isi ulang Es Teh Tawar.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Real Customer Testimonials (Moments of Delight) -->
+<section class="px-gutter pt-space-sm pb-space-md">
+<div class="flex items-center justify-between mb-3">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Kata Pelanggan Tenda</h3>
+<span class="font-label-sm text-label-sm text-tertiary flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[14px]">reviews</span>
+        Ulasan Asli
+      </span>
+</div>
+<div class="flex flex-col gap-2.5">
+<!-- Testi 1 -->
+<div class="bg-surface-container-lowest p-3.5 rounded-xl shadow-sm">
+<div class="flex items-center justify-between mb-2">
+<div class="flex items-center gap-2">
+<div class="w-9 h-9 rounded-full bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center font-label-md text-label-md font-bold">
+              RA
+            </div>
+<div>
+<span class="font-title-md text-title-md text-on-surface block leading-tight">Rian Anggoro</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Mahasiswa Arsitektur</span>
+</div>
+</div>
+<div class="flex text-secondary-container">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant italic">
+          “Lele terbangnya beneran garing sampai ke duri-durinya bisa dikunyah! Paling gila sambal level 2-nya, bikin nambah nasi uduk 2 piring. Tempat langganan tiap habis nugas malam.”
+        </p>
+</div>
+<!-- Testi 2 -->
+<div class="bg-surface-container-lowest p-3.5 rounded-xl shadow-sm">
+<div class="flex items-center justify-between mb-2">
+<div class="flex items-center gap-2">
+<div class="w-9 h-9 rounded-full bg-primary-fixed text-on-primary-fixed flex items-center justify-center font-label-md text-label-md font-bold">
+              DW
+            </div>
+<div>
+<span class="font-title-md text-title-md text-on-surface block leading-tight">dr. Dinda Wulandari</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Dokter Jaga RSUD</span>
+</div>
+</div>
+<div class="flex text-secondary-container">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant italic">
+          “Minyaknya jernih banget untuk ukuran warung tenda pecel lele kaki lima. Kol gorengnya gak gosong, higienis, dan pelayanannya Cak Bagus ramah pol. Selalu pesan buat jaga shift malam!”
+        </p>
+</div>
+</div>
+</section>
+<!-- Lokasi & Jam Operasional Mini-Map View -->
+<section class="px-gutter pt-space-xs pb-space-lg">
+<div class="bg-surface-container-lowest rounded-xl p-3.5 shadow-sm">
+<div class="flex items-start justify-between mb-2.5">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-primary uppercase font-bold tracking-wider">Lokasi Tenda Malam</span>
+<span class="font-title-md text-title-md text-on-surface">Depan Lapangan Merdeka (Samping Gapura)</span>
+</div>
+<span class="material-symbols-outlined text-primary text-[24px]">pin_drop</span>
+</div>
+<!-- Static Location View Token Container -->
+<div class="w-full h-36 bg-cover bg-center rounded-lg relative overflow-hidden mb-3" data-location="Lapangan Merdeka, Jakarta, Indonesia" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCqB_zX0ePjJwOjZZ2QFLJcombhU0lxKUFvUEOWx5NaKhmEmKHNPQtfppKkhUbZpAav4lKe4w5CxR1srHgYzV7o9Fep-irjEj-3RvU7xpCw6ujXLPi3CPSfzxTVHosm0Rkbe3VNcJvPoGIt3phh2xJGtIfvImHzg53HLI8Op4KYvnYwN-OseIVVPWxrdd18boNYA-n82Xi9n8ZCxVisWSAufaVy15QSWNOPsGIS8EAl8abWbZVW4oYk_w')">
+<div class="absolute inset-0 bg-on-surface/20"></div>
+<div class="absolute bottom-2 left-2 px-2.5 py-1 rounded bg-surface/90 backdrop-blur-sm text-on-surface font-label-sm text-label-sm flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-[14px] text-tertiary">near_me</span>
+<span>Buka Tenda Pukul 17:00 WIB</span>
+</div>
+</div>
+<div class="flex items-center justify-between text-body-sm">
+<span class="text-on-surface-variant flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-tertiary animate-ping"></span>
+          Parkir Mobil &amp; Motor Luas Aman
+        </span>
+<a class="text-primary font-label-md text-label-md flex items-center gap-0.5" href="https://maps.google.com" rel="noopener noreferrer" target="_blank">
+<span>Petunjuk Arah</span>
+<span class="material-symbols-outlined text-[15px]">open_in_new</span>
+</a>
+</div>
+</div>
+</section>
+<!-- Sticky Quick WhatsApp Ordering Floating Pill -->
+<div class="px-gutter pb-4">
+<a class="w-full py-3.5 px-4 rounded-full bg-tertiary-container text-on-tertiary shadow-xl flex items-center justify-between active:scale-[0.98] transition-transform" href="https://wa.me/6281234567890?text=Halo%20Cak%20Bagus,%20saya%20mau%20order%20Pecel%20Lele%20spesial%20dong" rel="noopener noreferrer" target="_blank">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-surface-container-lowest/20 flex items-center justify-center text-on-tertiary shrink-0">
+<span class="material-symbols-outlined text-[20px]">chat</span>
+</div>
+<div class="flex flex-col text-left">
+<span class="font-label-lg text-label-lg leading-tight">Pesan Cepat via WhatsApp</span>
+<span class="font-body-sm text-body-sm opacity-90 text-on-tertiary">Respon rata-rata &lt; 2 menit</span>
+</div>
+</div>
+<span class="px-3 py-1 rounded-full bg-surface-container-lowest text-tertiary font-label-md text-label-md font-bold shadow-sm">
+        Hubungi
+      </span>
+</a>
+</div>
+</div>
+<script>
+  let cartTotalVal = 0;
+  let cartItemCount = 0;
+
+  function selectSpicy(level) {
+    const buttons = document.querySelectorAll('.spicy-btn');
+    const toast = document.getElementById('spicy-toast');
+    const labels = [
+      'Level 0: Santai (Manis Gurih, ramah anak & lambung)',
+      'Level 1: Sedang (Cabe 5 rawit merah seimbang)',
+      'Level 2: Nampol 🔥 (Cabe 12 rawit, paling favorit di tenda)',
+      'Level 3: Mampus 🌶️🌶️ (25 rawit setan ulek pedas meledak)'
+    ];
+
+    buttons.forEach(btn => {
+      const btnLevel = parseInt(btn.getAttribute('data-level'));
+      if (btnLevel === level) {
+        btn.className = 'spicy-btn p-2 rounded-lg bg-primary-container text-on-primary text-left transition-all shadow-sm flex flex-col gap-0.5';
+        const icon = btn.querySelector('.material-symbols-outlined');
+        if (icon) icon.className = 'material-symbols-outlined text-[16px] text-on-primary';
+        const desc = btn.querySelector('.font-body-sm');
+        if (desc) desc.className = 'font-body-sm text-body-sm text-on-primary/90';
+        const title = btn.querySelector('.font-label-md');
+        if (title) title.className = 'font-label-md text-label-md text-on-primary';
+      } else {
+        btn.className = 'spicy-btn p-2 rounded-lg bg-surface-container-low text-left transition-all flex flex-col gap-0.5';
+        const icon = btn.querySelector('.material-symbols-outlined');
+        if (icon) icon.className = 'material-symbols-outlined text-[16px] text-secondary';
+        const desc = btn.querySelector('.font-body-sm');
+        if (desc) desc.className = 'font-body-sm text-body-sm text-on-surface-variant';
+        const title = btn.querySelector('.font-label-md');
+        if (title) title.className = 'font-label-md text-label-md text-on-surface';
+      }
+    });
+
+    if (toast) {
+      toast.textContent = 'Pilihan aktif: ' + labels[level];
+    }
+  }
+
+  function filterCategory(category, activeBtn) {
+    const pills = document.querySelectorAll('.cat-pill');
+    pills.forEach(p => {
+      p.className = 'cat-pill px-3.5 py-1.5 rounded-full bg-surface-container text-on-surface font-label-md text-label-md whitespace-nowrap shrink-0';
+    });
+    activeBtn.className = 'cat-pill px-3.5 py-1.5 rounded-full bg-primary text-on-primary font-label-md text-label-md whitespace-nowrap shadow-sm shrink-0';
+
+    const cards = document.querySelectorAll('.menu-card');
+    cards.forEach(card => {
+      const itemCat = card.getAttribute('data-category');
+      if (category === 'semua' || itemCat === category) {
+        card.style.display = 'flex';
+      } else {
+        card.style.display = 'none';
+      }
+    });
+  }
+
+  function addToCart(title, price) {
+    cartItemCount += 1;
+    cartTotalVal += price;
+    
+    const dock = document.getElementById('cart-dock');
+    const countEl = document.getElementById('cart-count');
+    const totalEl = document.getElementById('cart-total');
+
+    if (dock) {
+      dock.classList.remove('hidden');
+    }
+    if (countEl) {
+      countEl.textContent = cartItemCount;
+    }
+    if (totalEl) {
+      totalEl.textContent = 'Rp ' + cartTotalVal.toLocaleString('id-ID');
+    }
+  }
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_-2px_12px_rgba(0,0,0,0.06)]" data-active-classes="text-primary font-bold"><div class="flex justify-around items-center h-16 px-gutter-sm"><a aria-current="page" class="flex flex-col items-center justify-center w-16 h-12 transition-colors text-primary font-bold" data-path="beranda" href="#"><span class="material-symbols-outlined text-[22px]">storefront</span><span class="font-label-sm text-label-sm mt-0.5">Beranda</span></a><a class="flex flex-col items-center justify-center w-16 h-12 text-on-surface-variant hover:text-on-surface transition-colors" data-path="menu-spesial" href="#"><span class="material-symbols-outlined text-[22px]">restaurant_menu</span><span class="font-label-sm text-label-sm mt-0.5">Menu</span></a><a class="flex flex-col items-center justify-center w-16 h-12 text-on-surface-variant hover:text-on-surface transition-colors" data-path="promo-dan-paket" href="#"><span class="material-symbols-outlined text-[22px]">local_offer</span><span class="font-label-sm text-label-sm mt-0.5">Promo</span></a><a class="flex flex-col items-center justify-center w-16 h-12 text-on-surface-variant hover:text-on-surface transition-colors" data-path="info-warung" href="#"><span class="material-symbols-outlined text-[22px]">map</span><span class="font-label-sm text-label-sm mt-0.5">Lokasi</span></a></div></nav></body></html>
